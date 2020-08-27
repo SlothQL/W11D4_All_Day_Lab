@@ -25,7 +25,6 @@ public class Hotel {
     public void checkInToBedroom(Bedroom room, Guest guest) {
         room.addGuests(guest);
 
-
     }
     public void checkInToConferenceRoom(ConferenceRoom room, Guest guest){
         room.addGuests(guest);
@@ -37,4 +36,11 @@ public class Hotel {
     public void checkOutOfConferenceRoom(ConferenceRoom room, Guest guest){
         room.removeGuests(guest);
     }
+    public Booking bookRoom(Bedroom room, int numberOfNights){
+        Booking booking = new Booking(room, numberOfNights);
+        return booking;
+
+    }
+
+
 }
