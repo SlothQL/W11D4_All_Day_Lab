@@ -21,4 +21,10 @@ public abstract class Room {
     public int countGuests(){
         return this.guests.size();
     }
+    public void addGuests(Guest guest){
+        this.guests.add(guest);
+    }
+    public void removeGuests(Guest guest){
+        this.guests.remove(guest);
+    }
 }
