@@ -14,6 +14,4 @@ public enum RoomType {
         return this.capacity;
     }
 
-
-
 }

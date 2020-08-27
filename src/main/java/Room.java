@@ -18,4 +18,7 @@ public abstract class Room {
     public ArrayList<Guest> getGuests() {
         return guests;
     }
+    public int countGuests(){
+        return this.guests.size();
+    }
 }
