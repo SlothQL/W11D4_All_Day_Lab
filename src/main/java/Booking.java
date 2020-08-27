@@ -16,6 +16,10 @@ public class Booking {
     public int getNumberOfNights() {
         return numberOfNights;
     }
+    public int getTotal(){
+        int nightlyRate = this.bedroom.getNightlyRate();
+        return this.numberOfNights * nightlyRate;
+    }
 
 
 }
